@@ -7,12 +7,19 @@ var port = normalizePort(process.env.PORT || '3000');
 
 app.get('/', function (req, res) {
 
-		  res.send('FSE TAs are amazing!');
+  res.send('FSE TAs are amazing!');
 
 });
 
+app.get('/zhihao', function (req, res) {
+
+  res.send('zhihao are amazing!');
+
+});
+
+
 app.listen(port, function () {
-		  console.log('Example app listening on port ' + port);
+  console.log('Example app listening on port ' + port);
 });
 
 function normalizePort(val) {
@@ -30,4 +37,3 @@ function normalizePort(val) {
 
   return false;
 }
-
